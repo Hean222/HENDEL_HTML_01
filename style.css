@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+html, body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* header */
+section.header {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   align-items :center
+}
+
+.banner{
+    z-index: 2;
+}
+
+section.header h1 {
+    font-size: 15em;
+    color: white;
+top: -50px;
+position: relative;
+
+
+}
+
+section.header::before{
+    content: "";
+    position:absolute;
+    background-image: url(img/Hendel\ \(9\).jpg);
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    z-index: 1;
+}
+
+section.header::after{
+    content: "";
+    position:absolute;
+    background-image: url(img/Hendel\ \(9\));
+    width: 100%;
+    height: 100%;
+    background-position: bottom;
+    z-index: 3;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+
+/* MIddle */
+section.mid {
+padding: 100px 0;
+background-color: rgb(226, 44, 90);
+}
+
+section.mid .titre h1 {
+    position: relative;
+   text-align: center;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 75px;
+}
+
+
+section.mid .titre h1::before {
+    position: absolute;
+    content:"" ;
+    width: 100px;
+    height: 5px;
+    background-color: antiquewhite;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%);
+}
+    
+
+
+
+
+section.mid .card{
+    background-color: rgb(39, 4, 4);
+    max-width: 500px;
+    padding: 25px;
+    transition: 0.3s;
+    color: white;
+    box-sizing: border-box;
+    margin-bottom: 32px 50px 65px 20px;
+}
+section.mid  .container{
+    max-width: 1000px;
+    margin: 1px auto;
+    display: flex;
+    flex-direction: row;
+   flex-flow: wrap;
+   gap: 15px;
+    justify-content: space-evenly;
+}
+  
+section.mid .title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+
+section.mid .title h1{
+margin-left: 15px;
+font-size: 2em;
+transition: 0.3s;
+margin-bottom: 75px;
+}
+section.mid .title img{
+    width: 50px;
+}
+
+section.mid .card:hover{
+    box-shadow: 0px 0px 10px #000;
+
+}
+section.mid .card:hover h1 {
+color: antiquewhite;
+}
+
+/*footer*/
+
+section.footer{
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+
+section.footer::before{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/man.png);
+    z-index: -1;
+    
+}
+    
+.footer .titre h1 {
+    color:white;
+    font-size: 4em;
+    text-align: center;
+}
+
+
+@media (max-width: 900px;) {}
+    section.header .h1   
+
+{
+font-size: 5em;
+}
+
+
